@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS</title>
+</head>
+<body>
+
+    {% include 'navbar.html' %}
+
+    <div>
+        <ul>
+            <li>
+                <a href="/course">Courses</a>
+            </li>
+            <li>
+                <a href="/student">Student</a>
+            </li>
+            <li>
+                <a href="/enrollment">Enrollment</a>
+            </li>
+        </ul>
+        <hr>
+    </div>
+    
+    {% block content %}
+    
+    {% endblock %}
+
+</body>
+</html>
